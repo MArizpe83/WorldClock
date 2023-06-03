@@ -1,35 +1,28 @@
 body {
-  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-  color: #1a64d6;
-  font-family: "Roboto Slab", serif;
+  background-image: url("time.jpg");
+  background-size: cover;
 }
 
 h1 {
-  color: #1a64d6;
-  font-family: "Roboto Slab", serif;
-  font-size: 40px;
+  color: #013077;
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
   margin: 0;
   text-align: center;
 }
 
 strong {
-  color: #1a64d6;
-}
-h2 {
-  font-family: "Roboto Slab", serif;
-  font-size: 30px;
-  line-height: 48px;
-  font-weight: 400;
-  color: #1a64d6;
+  color: #87cbf3;
 }
 
 select {
+  font-family: "Times New Roman", Times, serif;
   display: block;
   width: 100%;
   font-size: 18px;
   border-radius: 15px;
   padding: 10px;
-  border-width: 0.5px;
+  border-width: 0px;
   border-style: hidden;
   border-color: -internal-light-dark(
     rgb(118, 118, 118),
@@ -41,19 +34,37 @@ select {
 
 .container {
   max-width: 600px;
-  margin: 60px auto;
-  background: white, 0.7;
-  padding: 30px;
+  margin: 25px auto;
+  background: linear-gradient(135deg, #fcfcfc 0%, #c6cfda 10%);
+  opacity: 70%;
+  padding: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 4px -9px 22px rgba(6, 1, 31, 0.2);
+}
+
+a {
+  text-decoration: none;
+}
+
+a :hover {
+  color: #90baf8;
+}
+
+a :visited {
+  color: #3ea8e6;
 }
 
 .city {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: #013077;
   display: flex;
-  margin: 10px 0;
+  margin: 5px 0;
   justify-content: space-between;
-  padding: 20px 0;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  padding: 8px 0;
+  border-bottom: 1px inset rgba(0, 0, 0, 0.3);
 }
 
 .city:last-child {
@@ -61,42 +72,37 @@ select {
 }
 
 .date {
-  opacity: 0.7;
+  opacity: 0.8;
   font-size: 18px;
 }
 
 .time {
-  margin: 35px 0;
-  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 30px 0;
+  font-size: 20px;
 }
 
 .time small {
-  font-size: 20px;
+  font-size: 18px;
   vertical-align: middle;
 }
 
 footer {
+  font-family: "Playfair Display", serif;
   text-align: center;
-  padding: 20px;
-  font-size: 15px;
-  color: rgb(237, 242, 243);
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  color: rgb(201, 237, 245);
 }
 
 .social-links {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .social-links a {
-  margin-top: 30px;
-  color: #1a64d6;
+  margin-top: 18px;
+  color: rgb(201, 237, 245);
   padding: 30px;
   border-radius: 50%;
   font-size: 25px;
   transition: all 100ms ease-in-out;
-  border-top: 30px;
-}
-
-footer .social-links a:hover {
-  color: var(--primary-color);
 }
